@@ -1,0 +1,21 @@
+{
+  "name": "ahriman",
+  "authors": [
+    "Ignacio Cartes <ignacio.cartes.w@gmail.com>"
+  ],
+  "description": "Can your devout survive Ahriman's turn 1 Meteo?",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.0"
+  }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Can your devout survive Ahriman's first turn Meteo?</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="img-ahriman img-top"></div>
+            <div class="img-devout img-top"></div>
+            <h1>Ahriman vs Devout</h1>
+            <p class="lead" id="result-survival"></p>
+        </div>
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="fframe">
+                    <p>Enter stats:</p>
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            <label for="num-hp" class="col-sm-7 control-label">HP</label>
+                            <div class="col-sm-5">
+                                <input type="number" class="form-control" id="num-hp" value="2489"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="num-mavoid" class="col-sm-7 control-label">M.Avoidance</label>
+                            <div class="col-sm-5">
+                                <input type="number" class="form-control" id="num-mavoid" value="3"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="num-mevade" class="col-sm-7 control-label">M.Evade%</label>
+                            <div class="col-sm-5">
+                                <input type="number" class="form-control" id="num-mevade" value="46"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="num-mdef" class="col-sm-7 control-label">M.Defense</label>
+                            <div class="col-sm-5">
+                                <input type="number" class="form-control" id="num-mdef" value="30"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12 text-center">
+                                <button type="submit" class="btn btn-primary" id="btn-calculate">Make it rain!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="fframe">
+                    <p>Results:</p>
+                    <div class="row">
+                        <div class="col-sm-8">Average hit:</div>
+                        <div class="col-sm-4 text-center damage"><span id="lbl-avg"></span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8">Min. hit:</div>
+                        <div class="col-sm-4 text-center damage"><span id="lbl-min"></span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8">Max. hit:</div>
+                        <div class="col-sm-4 text-center damage"><span id="lbl-max"></span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8">Survival rate:</div>
+                        <div class="col-sm-4 text-center damage"><span id="lbl-survival"></span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <small id="lbl-details">
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>Developed by me</p>
+        </footer>
+    </div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="js/ff3js.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
